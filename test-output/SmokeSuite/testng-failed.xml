@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [SmokeSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.mystore.testcases.HomepageTestGrouping">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="setup"/>
+          <include name="loadconfig"/>
+          <include name="beforeClass"/>
+          <include name="orderHistoryandDetailsTest"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.HomepageTestGrouping -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="2" parallel="tests" name="FireFoxTest(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="com.mystore.testcases.LoginPageTestGrouping">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="loadconfig"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="beforeClass"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.LoginPageTestGrouping -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->
